@@ -4,7 +4,7 @@ const { verify } = require("jsonwebtoken")
 module.exports = {
     checkToken: (req, res, next) => {
         let token = req.get('authorization').split(" ")[1]
-        console.log(token);
+        
        
 
         // console.log("Received token: ", token);
